@@ -1,57 +1,56 @@
-# 🩺 Dx Enfermería Web · NANDA-I · NIC · NOC · CKM 2026
+# 🩺 Dx Enfermería · NANDA-I · NIC · NOC · CKM 2026
 
-Aplicación web de diagnóstico de enfermería. Sin instalación — solo abre el link.
+## 🌐 OPCIÓN A — Render.com (GRATIS, link permanente)
 
-## 🚀 Deploy gratuito en Railway (recomendado)
+### Pasos (5 minutos):
 
-### Paso 1 — Sube el código a GitHub
-1. Ve a **github.com** → New repository → nombre: `dx-enfermeria`
-2. Sube estos archivos (arrastra la carpeta o usa GitHub Desktop)
+1. **Sube el código a GitHub:**
+   - Ve a github.com → New repository → "dx-enfermeria" → Create
+   - Clic en "uploading an existing file"
+   - Arrastra los archivos: `server.js` y `package.json`
+   - Clic en "Commit changes"
 
-### Paso 2 — Despliega en Railway
-1. Ve a **railway.app** → Login con GitHub
-2. **New Project** → **Deploy from GitHub repo**
-3. Selecciona `dx-enfermeria`
-4. Railway lo detecta como Node.js y despliega automáticamente
-5. En **Settings → Domains** → **Generate Domain** → obtienes tu URL pública
-
-### Paso 3 — ¡Listo!
-Abre tu URL (ej: `https://dx-enfermeria-production.up.railway.app`) desde cualquier dispositivo.
-
-**Costo:** Gratis (Railway incluye $5 USD/mes de crédito, la app usa ~$0.50/mes)
+2. **Despliega en Render:**
+   - Ve a render.com → Sign up con tu cuenta de GitHub
+   - Clic "New +" → "Web Service"
+   - Selecciona el repositorio "dx-enfermeria"
+   - Configura:
+     - **Name:** dx-enfermeria
+     - **Runtime:** Node
+     - **Build Command:** (dejar vacío)
+     - **Start Command:** node server.js
+     - **Plan:** Free
+   - Clic "Create Web Service"
+   - En ~2 minutos tendrás tu link: https://dx-enfermeria.onrender.com
 
 ---
 
-## 🔄 Otras opciones gratuitas
+## 🌐 OPCIÓN B — Railway.app (GRATIS $5/mes incluidos)
 
-### Render.com
-1. render.com → New → Web Service → Connect GitHub
-2. Build Command: (vacío)
-3. Start Command: `node server.js`
-4. Free plan → Deploy
+1. Ve a railway.app → Login con GitHub
+2. "New Project" → "Deploy from GitHub repo"
+3. Selecciona "dx-enfermeria"
+4. Railway detecta Node automáticamente y despliega
+5. Ve a Settings → Domains → "Generate Domain"
+6. Tu link: https://dx-enfermeria-production.up.railway.app
 
-### Fly.io
+---
+
+## 💻 OPCIÓN C — Local (sin internet para el servidor)
+
 ```bash
-npm install -g flyctl
-fly auth login
-fly launch
-fly deploy
+node server.js
+# Abre: http://localhost:3000
 ```
 
 ---
 
-## 🔑 Uso
-La app pide la API Key de Anthropic al usuario directamente en la interfaz.
-Cada usuario usa su propia clave — no se almacena en el servidor.
+## 🔑 API Key (necesaria en cualquier opción)
 
-- API Key: console.anthropic.com → API Keys
-- Costo por diagnóstico: ~$0.003 USD
-- $5 USD gratis al registrarse ≈ 1,500 diagnósticos
+1. Ve a console.anthropic.com → API Keys → Create Key
+2. Pégala en la app → Guardar
+3. $5 USD gratis al registrarte ≈ 1,500 diagnósticos
 
 ---
 
-## ⚙️ Variables de entorno
-Ninguna requerida. El servidor usa `PORT` del entorno automáticamente.
-
----
 *NANDA-I 2024-2026 · NIC 8ª ed. · NOC 7ª ed. · Guía CKM 2026 AHA/ACC/ADA/ASN*
