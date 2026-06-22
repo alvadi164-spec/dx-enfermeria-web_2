@@ -1,13 +1,1 @@
-{
-  "name": "dx-enfermeria-web",
-  "version": "2.0.0",
-  "description": "Diagnóstico de Enfermería NANDA-I NIC NOC CKM 2026",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "license": "MIT"
-}
+{"name":"dx-enfermeria-web","version":"3.0.0","description":"Dx Enfermería v3 Web NANDA-I NIC NOC GPC CKM 2026","main":"server.js","scripts":{"start":"node server.js"},"engines":{"node":">=18"},"license":"MIT"}
